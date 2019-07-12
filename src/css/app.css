@@ -374,7 +374,7 @@ footer .glyphicon {
 }
 
 .datetime-bottom {
-  padding: 50px 0px
+  padding: 140px 0px;
 }
 
 .datetime-bottom div p,
@@ -474,7 +474,7 @@ footer .glyphicon {
   }
 
   .datetime-bottom {
-    padding: 100px 0px;
+    padding: 140px 0px 100px 0;
   }
 
   .organizers h3 {
@@ -621,7 +621,7 @@ footer .glyphicon {
   }
 
   .datetime-bottom {
-    padding: 60px 0px;
+    padding: 140px 0px 60px 0;
   }
 
   .contact .col-sm-4 {
@@ -649,7 +649,7 @@ footer .glyphicon {
   }
 
   .datetime-bottom {
-    padding: 70px 0px 30px 0px;
+    padding: 140px 0px 30px 0px;
   }
 
   .organizers h3 {
@@ -711,9 +711,12 @@ footer .glyphicon {
     margin-top: 30px;
   }
 
-  .datetime-bottom,
   #Organizers {
     padding-top: 30px;
+  }
+
+  .datetime-bottom {
+    padding-top: 130px;
   }
 
   .organizers h3 {
