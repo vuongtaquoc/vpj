@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "now-build": "next build && next export -o src"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vuongtaquoc/vpj.git"
