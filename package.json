@@ -1,0 +1,23 @@
+{
+  "name": "vpj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "now-build": "next build && next export -o src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuongtaquoc/vpj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vuongtaquoc/vpj/issues"
+  },
+  "homepage": "https://github.com/vuongtaquoc/vpj#readme",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "owl.carousel": "2.3.4"
+  }
+}
