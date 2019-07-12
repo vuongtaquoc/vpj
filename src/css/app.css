@@ -3,24 +3,7 @@ body {
   font-size: 14px;
   font-family: 'Quicksand';
   background: #f4f4f4;
-}
-
-
-/* font */
-
-@font-face {
-  font-family: 'Quicksand';
-  src: url(../fonts/QUICKSANDREGULAR.TTF);
-}
-
-@font-face {
-  font-family: 'Quicksand_Bold';
-  src: url(../fonts/QUICKSANDBOLD.TTF);
-}
-
-@font-face {
-  font-family: 'OpenSans_Bold';
-  src: url(../fonts/OpenSansBold.ttf);
+  font-weight: 400;
 }
 
 a,
@@ -185,6 +168,7 @@ h4 {
   color: #000000 !important;
   font-family: 'Quicksand';
   font-size: 22px;
+  font-weight: 400;
 }
 
 .navbar-header img {
@@ -263,6 +247,7 @@ footer .glyphicon {
   font-family: 'Quicksand';
   font-size: 23px;
   color: #fff;
+  font-weight: 400;
 }
 
 .about-us {
@@ -282,7 +267,8 @@ footer .glyphicon {
 }
 
 .about-us .col-sm-3 p {
-  font-family: 'Quicksand_Bold';
+  font-family: 'Quicksand';
+  font-weight: 700;
   font-size: 60px;
   color: #fff;
   white-space: nowrap;
@@ -301,7 +287,9 @@ footer .glyphicon {
 }
 
 .about-bottom a {
-  font-family: 'Quicksand_Bold';
+  font-family: 'Quicksand';
+  font-weight: 400;
+  font-weight: 700;
   color: #333;
   font-size: 33px;
 }
@@ -316,7 +304,8 @@ footer .glyphicon {
 
 .timeline .span-bold {
   padding-right: 8px;
-  font-family: 'Quicksand_Bold';
+  font-family: 'Quicksand';
+  font-weight: 700;
 }
 
 .timeline .col-sm-8 p {
@@ -335,7 +324,8 @@ footer .glyphicon {
 
 .timeline .col-sm-4 p {
   margin-top: 25px;
-  font-family: 'Quicksand_Bold';
+  font-family: 'Quicksand';
+  font-weight: 700;
   font-size: 72px;
   color: #000;
 }
@@ -359,7 +349,8 @@ footer .glyphicon {
 
 .date-time .col-sm-3 p {
   background: #fff;
-  font-family: 'OpenSans_Bold';
+  font-family: 'Open Sans';
+  font-weight: 700;
   font-size: 73px;
   padding: 20px 0px;
   border-radius: 8px;
@@ -378,7 +369,8 @@ footer .glyphicon {
 
 .date-time h3 {
   margin: 30px 0px 60px 0;
-  font-family: 'OpenSans_Bold';
+  font-family: 'Open Sans';
+  font-weight: 700;
 }
 
 .datetime-bottom {
@@ -397,13 +389,15 @@ footer .glyphicon {
   padding: 10px 30px;
   font-size: 47px;
   color: #000;
-  font-family: 'Quicksand_Bold';
+  font-family: 'Quicksand';
+  font-weight: 700;
   border-radius: 12px;
 }
 
 .datetime-bottom div p {
   font-size: 28px;
-  font-family: 'Quicksand_Bold';
+  font-family: 'Quicksand';
+  font-weight: 700;
 }
 
 .organizers {
@@ -416,7 +410,8 @@ footer .glyphicon {
 }
 
 .organizers h3 {
-  font-family: 'Quicksand_Bold';
+  font-family: 'Quicksand';
+  font-weight: 700;
   font-size: 72px;
   color: #fff;
   margin-bottom: 40px;
@@ -446,7 +441,8 @@ footer .glyphicon {
 .contact .col-sm-4 p {
   font-size: 52px;
   color: #000;
-  font-family: 'Quicksand_Bold';
+  font-family: 'Quicksand';
+  font-weight: 700;
 }
 
 .contact .col-sm-8 {

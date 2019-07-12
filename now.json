@@ -2,11 +2,9 @@
     "version": 2,
     "builds": [
       {
-        "src": "src/**",
-        "use": "@now/static"
+        "src": "package.json",
+        "use": "@now/static-build",
+        "config": { "distDir": "dist" }
       }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "src/$1" }
     ]
   }
