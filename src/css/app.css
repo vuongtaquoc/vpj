@@ -1,9 +1,9 @@
 body {
-  color: #333;
+  color: #fff;
   font-size: 14px;
   font-family: 'Quicksand';
-  background: #f4f4f4;
-  font-weight: 400;
+  background: #02003a;
+  overflow-x: hidden;
 }
 
 a,
@@ -102,19 +102,21 @@ body {
 }
 
 .container-cus {
-  width: 90% !important;
+  width: 90%!important;
 }
 
 .container-max {
-  width: 85% !important;
+  width: 85%!important;
 }
 
 .container-min {
-  width: 1060px !important
+  width: 1060px!important
 }
 
 .container-organizers {
   width: 911px;
+  /*margin-top: 400px;*/
+  padding-bottom: 80px;
 }
 
 .jumbotron img {
@@ -150,17 +152,19 @@ h4 {
 }
 
 .container-fluid {
-  padding: 60px 0px;
+  padding: 60px 0px 0px 0px;
 }
 
 .navbar {
   border: 0px;
   background-color: #f4f4f4;
   z-index: 9999;
+  padding: 10px 0px;
+  /* border-bottom: 1px solid #dddd; */
 }
 
 .navbar-nav {
-  padding: 12px 0px;
+  padding: 8px 0px;
 }
 
 .navbar li a,
@@ -168,11 +172,11 @@ h4 {
   color: #000000 !important;
   font-family: 'Quicksand';
   font-size: 22px;
-  font-weight: 400;
 }
 
 .navbar-header img {
-  height: 80px;
+  height: 70px;
+  padding-right: 20px;
 }
 
 .navbar-brand {
@@ -214,7 +218,6 @@ footer .glyphicon {
     opacity: 0;
     transform: translateY(70%);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -226,7 +229,6 @@ footer .glyphicon {
     opacity: 0;
     -webkit-transform: translateY(70%);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
@@ -243,11 +245,18 @@ footer .glyphicon {
   width: 100%;
 }
 
+#about {
+  margin-bottom: 300px
+}
+
+#program {
+  margin-bottom: 190px;
+}
+
 .about-us h4 {
   font-family: 'Quicksand';
   font-size: 23px;
   color: #fff;
-  font-weight: 400;
 }
 
 .about-us {
@@ -260,9 +269,9 @@ footer .glyphicon {
 }
 
 .about-us .col-sm-9 {
-  width: calc(100% - 250px);
+  width: calc(100% - 350px);
   padding-left: 100px;
-  max-width: 1046px;
+  max-width: 824px;
   text-align: justify;
 }
 
@@ -276,26 +285,100 @@ footer .glyphicon {
   top: 100px;
 }
 
-.about-bottom p {
+.about-bottom a {
   width: 250px;
   text-align: center;
   background: #fff;
   padding: 10px;
-  border-radius: 8px 0px 0px 8px;
-  right: 0px;
-  position: absolute;
-}
-
-.about-bottom a {
+  border-radius: 8px;
   font-family: 'Quicksand';
-  font-weight: 400;
   font-weight: 700;
   color: #333;
   font-size: 33px;
 }
 
+.about-bottom {
+  text-align: center;
+  margin-top: 60px;
+}
+
 .timeline {
   position: relative;
+  margin-top: 80px
+}
+
+.timeline-wrapper {
+  position: relative;
+}
+
+.timeline-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: #157FDE;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-container {
+  /* padding: 15px 50px; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: -10px;
+  border: 4px solid #fff;
+  background: #157FDE;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-container-left {
+  left: 0;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.timeline-container-left:first-child {
+  padding-top: 0;
+}
+
+.timeline-container-left:last-child {
+  padding-bottom: 0;
+}
+
+
+.timeline-container-right {
+  left: 50%;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.timeline-container-right::after {
+  left: -14px;
+}
+
+.timeline-content {
+  position: relative;
+}
+
+.timeline-content p {
+  margin-bottom: 10px !important;
+}
+
+#timeline {
+  margin-bottom: 300px;
 }
 
 .timeline span {
@@ -315,7 +398,7 @@ footer .glyphicon {
 .timeline .col-sm-4 {
   position: absolute;
   right: 0px;
-  bottom: 0px;
+  /* bottom:  0px; */
 }
 
 .timeline .col-sm-4 img {
@@ -323,24 +406,16 @@ footer .glyphicon {
 }
 
 .timeline .col-sm-4 p {
-  margin-top: 25px;
+  /* margin-top: 25px; */
   font-family: 'Quicksand';
   font-weight: 700;
   font-size: 72px;
-  color: #000;
-}
-
-.timeline .indent-level-1 {
-  margin-left: 90px;
-}
-
-.timeline .indent-level-2 {
-  margin-left: 180px;
+  color: #fff;
 }
 
 .container-time {
-  width: 840px !important;
-  margin-top: 160px;
+  width: 840px!important;
+  margin-top: 100px;
 }
 
 .date-time .col-sm-3 {
@@ -355,6 +430,7 @@ footer .glyphicon {
   padding: 20px 0px;
   border-radius: 8px;
   margin-bottom: 20px;
+  color: #000;
 }
 
 #pricing {
@@ -363,25 +439,29 @@ footer .glyphicon {
 
 .date-time .col-sm-3 h4,
 .date-time h3 {
-  font-size: 23px;
+  font-size: 27px;
   color: #fff;
 }
 
 .date-time h3 {
-  margin: 30px 0px 60px 0;
+  margin: 30px 0px;
   font-family: 'Open Sans';
   font-weight: 700;
 }
 
 .datetime-bottom {
-  padding: 140px 0px;
+  padding: 50px 0px
 }
 
 .datetime-bottom div p,
 .datetime-bottom div h4,
 .datetime-bottom div span {
-  font-size: 18px;
+  font-size: 23px;
   color: #fff;
+}
+
+.btn-bottom {
+  margin-top: 50px
 }
 
 .btn-bottom .span-bottom {
@@ -400,9 +480,21 @@ footer .glyphicon {
   font-weight: 700;
 }
 
+.download-img img {
+  height: 50px;
+}
+
+.datetime-bottom div {
+  padding-left: 60px;
+}
+
+.datetime-bottom div:first-child {
+  padding-left: 0px;
+}
+
 .organizers {
   text-align: center;
-  padding-bottom: 60px;
+  margin-top: 30px;
 }
 
 .organizers div {
@@ -414,40 +506,48 @@ footer .glyphicon {
   font-weight: 700;
   font-size: 72px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
+  margin-top: 0px;
 }
 
-
-
-.contact .col-sm-4 {
-  float: right;
-  padding-top: 300px;
-  width: 520px;
-}
-
-.contact .col-sm-4 a {
+.contact .col-sm-6:nth-child(1) a {
   color: #333;
 }
 
-.contact .col-sm-4 img {
+.contact .col-sm-6:nth-child(1) img {
   height: 80px;
   padding-right: 50px;
 }
 
-.contact .col-sm-4 p a:first-child img {
+.contact .col-sm-6:nth-child(1) p {
+  color: #000;
+  font-size: 30px;
+}
+
+.contact .col-sm-6:nth-child(1) p a:first-child img {
   padding-right: 70px;
 }
 
-.contact .col-sm-4 p {
+.contact .col-sm-6:nth-child(1) a {
   font-size: 52px;
   color: #000;
   font-family: 'Quicksand';
   font-weight: 700;
 }
 
-.contact .col-sm-8 {
-  float: left;
-  display: none;
+.contact .col-sm-6:nth-child(2) {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.contact .col-sm-6:nth-child(2) img {
+  width: 90%;
+  float: right;
+}
+
+.p-margin {
+  padding: 30px 0px;
 }
 
 .organizers .col-sm-4 img {
@@ -456,391 +556,177 @@ footer .glyphicon {
   margin: auto;
 }
 
-.container-cus .btn-bottom {
-  margin-bottom: 60px;
+.contact-bg {
+  background: #f4f4f4;
+  position: relative;
+  z-index: 999;
+  padding: 60px 0px 0px 0px;
 }
 
-@media screen and (max-width: 1920px) {
-  .about-us {
-    margin-top: 145px;
-  }
-
-  .timeline {
-    margin-top: 300px;
-  }
-
-  .container-time {
-    margin-top: 250px;
-  }
-
-  .datetime-bottom {
-    padding: 140px 0px 100px 0;
-  }
-
-  .organizers h3 {
-    margin-bottom: 100px;
-  }
-
-  .organizers {
-    margin-bottom: 70px;
-  }
-
-  #pricing {
-    padding-bottom: 200px;
-  }
-
-  .about-us .col-sm-9 {
-
-    max-width: 953px;
-
-  }
-
-  .timeline .col-sm-8 p {
-    margin-bottom: 80px;
-  }
-
-  .timeline .col-sm-4 {
-
-    right: 100px;
-    bottom: 200px;
-  }
-
-  .contact .col-sm-4 {
-    padding-top: 400px;
-  }
+.bg-border {
+  z-index: 999;
+  position: relative;
+  height: 7px;
+  background: linear-gradient(90deg, #14003F 0%, #00DEED 100%);
 }
 
-@media screen and (max-width: 1850px) {
-
-  .timeline {
-    margin-top: 250px;
-  }
-
-  .contact .col-sm-4 {
-    padding-top: 300px
-  }
+.judging {
+  margin-top: 300px;
 }
 
-@media screen and (max-width: 1800px) {
-  .container-time {
-    margin-top: 370px;
-  }
-
-  #pricing {
-    padding-bottom: 100px;
-  }
-
-  .timeline .col-sm-4 {
-    bottom: 80px;
-  }
-
-  .timeline {
-    margin-top: 150px;
-  }
-
-  .timeline .col-sm-4 {
-    bottom: 100px;
-  }
+.judging ul {
+  width: 900px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
-@media screen and (max-width: 1750px) {
-  .timeline .col-sm-4 {
-    bottom: 100px;
-  }
-
-  .container-time {
-    margin-top: 270px;
-  }
-
-  .timeline {
-    margin-top: 130px;
-  }
-
-  .timeline .col-sm-4 {
-    bottom: 120px;
-  }
-
-  .contact .col-sm-4 {
-    padding-top: 320px;
-  }
+.judging ul li {
+  width: calc(100% / 3);
+  display: inline-block;
+  margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1720px) {
-
-  .timeline {
-    margin-top: 100px;
-  }
-
-  .container-time {
-    margin-top: 270px;
-  }
-
-  #pricing {
-    padding-bottom: 0px;
-  }
-
-  .timeline .col-sm-4 {
-    bottom: 120px;
-  }
-
-  .contact .col-sm-4 {
-    padding-top: 350px;
-  }
-
+.judging ul li img {
+  height: 90px;
+  display: block;
+  margin: auto;
 }
 
-@media screen and (max-width: 1650px) {
-  .timeline {
-    margin-top: 80px;
-  }
-
-  .container-time {
-    margin-top: 200px;
-  }
+.judging ul li span {
+  float: left;
 }
 
-@media screen and (max-width: 1600px) {
-  .about-us {
-    margin-top: 70px;
-  }
-
-  .timeline {
-    margin-top: 100px;
-  }
-
-  .container-time {
-    margin-top: 210px;
-  }
-
-
+.judging ul li .span-text {
+  width: 150px;
+  text-align: left;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
 }
 
-@media screen and (max-width: 1550px) {
-  .container-time {
-    margin-top: 170px;
-  }
-
-  .datetime-bottom {
-    padding: 140px 0px 60px 0;
-  }
-
-  .contact .col-sm-4 {
-    padding-top: 250px;
-  }
-
-  .timeline {
-    margin-top: 80px;
-  }
+.judging p {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 80px 0px 50px 0px;
 }
 
-@media screen and (max-width: 1500px) {
-  .timeline {
-    margin-top: 40px;
-  }
+.judging ul li .span-img {
+  width: calc(100% - 150px);
 }
 
-@media screen and (max-width: 1450px) {
-  .timeline {
-    margin-top: 30px;
-  }
-
-  .container-time {
-    margin-top: 130px;
-  }
-
-  .datetime-bottom {
-    padding: 140px 0px 30px 0px;
-  }
-
-  .organizers h3 {
-    margin-bottom: 50px;
-  }
-
-  .about-us .col-sm-9 {
-
-    padding-right: 70px;
-  }
-
-  .about-bottom p {
-    bottom: -45px;
-  }
-
-  .contact .col-sm-4 {
-    padding-top: 300px;
-  }
+.judging ul li a {
+  color: #fff;
+  width: 100%;
+  /* display: block; */
+  /* float: left; */
+  /* position: relative; */
 }
 
-@media screen and (max-width: 1400px) {
-  .timeline {
-    margin-top: 0px;
-  }
-
-  .contact .col-sm-4 {
-    padding-top: 250px;
-  }
-
-  .container-time {
-    margin-top: 80px;
-  }
+.judging ul li:nth-child(5) span,
+.judging ul li:nth-child(4) span,
+.judging ul li:nth-child(6) span {
+  float: right
 }
 
-@media screen and (max-width: 1350px) {
-  .timeline {
-    margin-top: 50px;
-  }
-
-  .timeline .indent-level-1 {
-    margin-left: 60px;
-  }
-
-  .timeline .indent-level-2 {
-    margin-left: 120px;
-  }
-
-  .container-time {
-    margin-top: 170px;
-  }
-
-  .datetime-bottom {
-    padding-bottom: 20px;
-  }
+.judging ul li:nth-child(5) .span-text,
+.judging ul li:nth-child(4) .span-text,
+.judging ul li:nth-child(6) .span-text {
+  text-align: right
 }
 
-@media screen and (max-width: 1350px) {
-  .about-us {
-    margin-top: 30px;
-  }
-
-  #Organizers {
-    padding-top: 30px;
-  }
-
-  .datetime-bottom {
-    padding-top: 130px;
-  }
-
-  .organizers h3 {
-    margin-bottom: 50px;
-  }
-
-  #Organizers {
-    padding-bottom: 0px;
-  }
-
-  .container-time {
-    margin-top: 100px;
-  }
+#organizers {
+  padding-top: 120px;
+  margin-bottom: 200px;
 }
 
 @media screen and (max-width: 1300px) {
-
   .container-min,
   .container-max,
   .container-cus {
-    width: 100% !important;
+    width: 100%!important;
     padding: 0px 10px
   }
-
   .navbar-header img {
     height: 60px;
   }
-
   .navbar li a,
   .navbar .navbar-brand {
     font-size: 18px;
   }
-
   .navbar-nav {
     padding: 4px 0px;
   }
-
   .timeline {
     margin-top: 50px;
   }
-
   .container-time {
     margin-top: 100px;
   }
-
   .datetime-bottom {
     padding-top: 100px;
   }
-
-  body {
-    background: linear-gradient(to bottom right, #FF452F, #FF452F, #F86D24, #F28C1C, #F09819, #F09819);
-  }
-
+  /*body {
+        background: linear-gradient(to bottom right, #FF452F, #FF452F, #F86D24, #F28C1C, #F09819, #F09819);
+    }*/
   .bg_head {
     display: none;
   }
-
   .jumbotron {
     background: #f4f4f4;
   }
-
   .about-bottom p {
     top: 50px;
     position: relative;
     float: right;
   }
-
   .navbar-brand {
     height: auto;
   }
-
   .navbar {
     border-bottom: 1px solid #ddd;
   }
-
   #timeline,
   #contact {
-    background: #f4f4f4;
     padding: 100px 0px;
   }
-
   .timeline .col-sm-4 {
     top: -100px;
   }
-
   .timeline .col-sm-4 img {
     display: inline-block;
     height: 200px;
     float: right;
   }
-
-  #Organizers {
+  #organizers {
     padding-bottom: 100px;
   }
-
   .contact .col-sm-8 {
     float: left;
     display: inline-block;
   }
-
   .contact .col-sm-8 img {
     height: 500px;
     width: 100%
   }
-
   .contact .col-sm-4 {
     padding-top: 0px;
     bottom: 0px;
     position: absolute;
     right: 0px;
   }
-
   .timeline .col-sm-4 {
     right: 0px;
-
   }
-
   .about-us .col-sm-9 {
     padding-right: 0px;
+  }
+  .contact .col-sm-6:nth-child(1) a {
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-
   .timeline .col-sm-4,
   .timeline .col-sm-8,
   .about-us .col-sm-3,
@@ -848,159 +734,149 @@ footer .glyphicon {
     width: 100%;
     position: relative;
   }
-
   .about-us .col-sm-9 {
     padding-left: 0px;
     padding-right: 0px;
   }
-
   .timeline .col-sm-4 p,
   .container-time {
     margin-top: 40px;
   }
-
   .about-us {
     text-align: center;
     margin-top: 0px;
   }
-
   .about-us .col-sm-3 p {
     top: 0px;
   }
-
   .container-time,
   .container-organizers {
-    width: 100% !important
+    width: 100%!important
   }
-
   .date-time .col-sm-3 {
     padding: 0px 10px;
   }
-
   .datetime-bottom div {
     width: 100%;
+    padding-left: 0px;
+    margin-bottom: 50px;
   }
-
+  .datetime-bottom div:last-child {
+    margin-bottom: 0px;
+  }
+  .contact .col-sm-6:nth-child(1) p {
+    text-align: center;
+  }
   .timeline .col-sm-4 {
     top: 0px;
     margin-bottom: 40px;
   }
-
-  .contact .col-sm-4 img {
+  .contact .col-sm-6:nth-child(1) img {
     height: 50px;
     padding-right: 30px;
   }
-
-  .contact .col-sm-4 img,
-  .contact .col-sm-4 p a:first-child img {
+  .contact .col-sm-6:nth-child(1) img,
+  .contact .col-sm-6:nth-child(1) p a:first-child img {
     padding-right: 30px;
   }
-
-  .contact .col-sm-4 {
-    width: 400px;
+  .contact .col-sm-6 {
+    width: 100%;
   }
-
+  .contact .col-sm-6:last-child {
+    position: static;
+  }
+  .contact .col-sm-6:nth-child(2) img {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+  #contact {
+    padding-bottom: 0px;
+  }
+  .container-organizers {
+    margin-top: 0px;
+  }
   .timeline .col-sm-4 img {
     height: 300px;
     display: block;
     width: 100%;
   }
-
   .timeline .col-sm-4 {
     text-align: center;
-
     right: 0px;
   }
+  .judging ul {
+    width: 100%;
+  }
 }
-
 
 @media screen and (max-width: 880px) {
   .navbar-header img {
     height: 55px;
   }
-
   .navbar li a,
   .navbar .navbar-brand {
     font-size: 15px;
   }
-
   .navbar-nav {
     padding: 2px 0px;
   }
-
   .jumbotron img {
     width: 95%;
   }
-
-  .timeline .indent-level-1 {
-    margin-left: 30px;
-  }
-
-  .timeline .indent-level-2 {
-    margin-left: 60px;
-  }
-
 }
 
 @media screen and (max-width: 767px) {
   .navbar .navbar-brand img {
     width: 100%;
   }
-
   .navbar-default .navbar-toggle {
     width: 44px;
   }
-
   .navbar .navbar-brand {
     width: calc(100% - 65px);
   }
-
   .navbar .navbar-brand,
   .navbar-default .navbar-toggle {
     display: inline-block;
   }
-
   .container-fluid {
     padding: 20px 0px;
   }
-
   .about-us .col-sm-3 p,
   .timeline .col-sm-4 p,
   .container-time,
   .organizers h3 {
     font-size: 40px
   }
-
   .about-us h4,
   .timeline span,
   .datetime-bottom div p,
   .datetime-bottom div h4,
-  .datetime-bottom div span {
+  .datetime-bottom div span,
+  .contact .col-sm-6:nth-child(1) p {
     font-size: 15px;
   }
-
   .timeline .col-sm-4 img {
     width: 60%;
-
     float: none;
     margin: auto;
   }
-
   .organizers div,
   .contact .col-sm-4 p {
     margin-bottom: 20px;
   }
-
+  .contact .col-sm-6:nth-child(1) a {
+    font-size: 27px;
+  }
   .about-bottom p {
     top: auto;
     bottom: auto;
   }
-
   .datetime-bottom,
   .contact .col-sm-4 {
     padding-top: 0px;
   }
-
   .about-bottom a,
   .date-time .col-sm-3 h4,
   .contact .col-sm-4 p,
@@ -1009,61 +885,108 @@ footer .glyphicon {
   .btn-bottom .span-bottom {
     font-size: 20px;
   }
-
   .contact .col-sm-8 img {
     width: 70%;
     height: auto;
     display: block;
     margin: auto;
   }
-
   .contact .col-sm-4 img {
     height: 40px;
     padding-right: 20px
   }
-
   .contact .col-sm-4 p {
     margin-bottom: 40px;
   }
-
   .organizers .col-sm-4 {
     width: calc((100% / 3) - 4px);
     display: inline-block;
   }
-
   .organizers .col-sm-4 img {
     width: 80%;
     height: auto;
   }
-
   .contact .col-sm-4 {
     float: none;
     text-align: center;
     margin-bottom: 100px;
   }
-
   .contact .col-sm-4,
   .contact .col-sm-8 {
     width: 100%;
   }
-
-  .timeline .col-sm-8 p {
+  /* .timeline .col-sm-8 p {
     text-align: justify;
-  }
-
+  } */
   .contact .col-sm-4 {
     position: relative;
-
   }
-
   .date-time h3 {
     padding: 50px 0px;
   }
-
+  .judging ul li {
+    width: 100%;
+  }
+  .judging ul li:nth-child(5) span,
+  .judging ul li:nth-child(4) span,
+  .judging ul li:nth-child(6) span {
+    float: left;
+  }
+  .judging ul li:nth-child(5) .span-text,
+  .judging ul li:nth-child(4) .span-text,
+  .judging ul li:nth-child(6) .span-text {
+    text-align: left;
+  }
+  .judging ul {
+    width: 340px
+  }
+  .judging ul li .span-img {
+    width: auto
+  }
+  .judging ul li .span-text {
+    width: 250px;
+    padding-left: 30px;
+    /* transform: none; */
+    left: 100px;
+  }
+  .navbar-header {
+    margin-left: 0px!important;
+  }
+  #about {
+    margin-bottom: 180px;
+  }
+  #organizers {
+    padding-bottom: 0px;
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+  .container-organizers {
+    padding-bottom: 0px;
+  }
+  #timeline {
+    margin-bottom: 80px;
+    padding-bottom: 0px;
+  }
+  .judging {
+    margin-top: 150px;
+  }
+  #program {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .logo {
     font-size: 150px;
+  }
+  .judging ul li {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .judging ul li .span-text {
+    width: auto;
+    padding-left: 15px
   }
 }
