@@ -325,7 +325,7 @@ footer .glyphicon {
 .timeline-container {
   /* padding: 15px 50px; */
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -378,7 +378,8 @@ footer .glyphicon {
 }
 
 #timeline {
-  margin-bottom: 300px;
+  padding-top: 100px;
+  margin-bottom: 100px;
 }
 
 .timeline span {
@@ -636,7 +637,7 @@ footer .glyphicon {
 }
 
 #organizers {
-  padding-top: 120px;
+  padding-top: 70px;
   margin-bottom: 200px;
 }
 
