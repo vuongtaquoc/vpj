@@ -304,7 +304,7 @@ footer .glyphicon {
 
 .timeline {
   position: relative;
-  margin-top: 80px
+  margin-top: 240px
 }
 
 .timeline-wrapper {
@@ -473,6 +473,9 @@ footer .glyphicon {
   font-family: 'Quicksand';
   font-weight: 700;
   border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+  min-width: 491px;
 }
 
 .datetime-bottom div p {
@@ -572,7 +575,7 @@ footer .glyphicon {
 }
 
 .judging {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .judging ul {
@@ -637,7 +640,7 @@ footer .glyphicon {
 }
 
 #organizers {
-  padding-top: 70px;
+  padding-top: 170px;
   margin-bottom: 200px;
 }
 
@@ -885,6 +888,7 @@ footer .glyphicon {
   .datetime-bottom div p,
   .btn-bottom .span-bottom {
     font-size: 20px;
+    min-width: 244px;
   }
   .contact .col-sm-8 img {
     width: 70%;

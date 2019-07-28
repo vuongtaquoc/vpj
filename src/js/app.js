@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   var _width = $(window).width();
 
-  $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+  $(".navbar a, footer a[href='#myPage'], #apply-now").on('click', function (event) {
 
     if (this.hash !== "") {
 
@@ -53,4 +53,11 @@ $(document).ready(function () {
 
     $(".bg-bottom img").height(_htimeline * 2);
   }
+
+
+  $('#myNavbar li a').click(function() {
+    if (_width < 768) {
+      $('#myNavbar').collapse('hide');
+    }
+  });
 })
