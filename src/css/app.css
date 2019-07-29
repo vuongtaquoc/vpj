@@ -995,3 +995,10 @@ footer .glyphicon {
     padding-left: 15px
   }
 }
+
+.apply-link {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 100%;
+}
