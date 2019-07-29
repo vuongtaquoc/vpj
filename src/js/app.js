@@ -57,7 +57,6 @@ $(document).ready(function () {
   }
 
   $('#myNavbar li a').click(function() {
-    console.log('xxx');
     if (_width < 768) {
       $('#myNavbar').collapse('hide');
     }
@@ -65,7 +64,7 @@ $(document).ready(function () {
 
   $(window).scroll();
 
-  $(document).click(function (event) {
+  $(document).on('click touch', function (event) {
     var clickover = $(event.target);
     var _opened = $(".navbar-collapse").hasClass("in");
     if (_opened === true && !clickover.hasClass("navbar-toggle")) {
