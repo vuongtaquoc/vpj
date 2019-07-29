@@ -66,8 +66,10 @@ $(document).ready(function () {
 
   $(document).on('click touchstart', function(event) {
     var clickover = $(event.target);
+    var inMenu = clickover.parents('.navbar-collapse').length > 0
     var _opened = $(".navbar-collapse").hasClass("in");
-    if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+
+    if (!inMenu && _opened === true && !clickover.hasClass("navbar-toggle")) {
       $("button.navbar-toggle").click();
     }
   });
