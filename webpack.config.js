@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const rootDir = path.resolve(__dirname)
+const cdn = process.env.CDN || ''
 
 module.exports = {
   context: path.join(rootDir, 'src'),
@@ -19,7 +20,7 @@ module.exports = {
   },
   output: {
     path: path.join(rootDir, 'dist'),
-    publicPath: '',
+    publicPath: cdn,
     filename: 'js/[name].[hash:5].js'
   },
   mode: 'production',
@@ -30,6 +31,9 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
+            options: {
+              pathPath: cdn
+            }
           },
           'css-loader',
         ],
@@ -41,7 +45,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: 'img/[path][name].[hash:6].[ext]',
-              publicPath: '',
+              publicPath: cdn,
               emitFile: true,
               context: 'src/img'
             }
