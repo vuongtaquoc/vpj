@@ -64,7 +64,7 @@ $(document).ready(function () {
 
   $(window).scroll();
 
-  $(document).on('click touch', function (event) {
+  $(document).on('click touchstart', function(event) {
     var clickover = $(event.target);
     var _opened = $(".navbar-collapse").hasClass("in");
     if (_opened === true && !clickover.hasClass("navbar-toggle")) {
