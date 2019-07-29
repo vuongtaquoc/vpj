@@ -71,10 +71,14 @@ module.exports = {
       {
         from: path.join(rootDir, 'src/img'),
         to: 'img'
-      } 
+      }
     ])
   ],
   resolve: {
-    extensions: ['.css', '.js']
+    extensions: ['.css', '.js'],
+    modules: [
+      'node_modules',
+      'src'
+    ]
   }
 }

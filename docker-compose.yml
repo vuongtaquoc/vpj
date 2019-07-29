@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  vpj:
+    image: node:carbon
+    container_name: vpj
+    working_dir: /usr/vpj
+    command: bash -c "tail -f /dev/null"
+    volumes:
+      - .:/usr/vpj
+      - /usr/vpj/node_modules
+    ports:
+      - 3333:3333
