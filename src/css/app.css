@@ -644,6 +644,11 @@ footer .glyphicon {
   margin-bottom: 200px;
 }
 
+#frequent-ask-question {
+  padding-top: 170px;
+  margin-bottom: 200px;
+}
+
 @media screen and (max-width: 1300px) {
   .container-min,
   .container-max,
@@ -703,6 +708,10 @@ footer .glyphicon {
     float: right;
   }
   #organizers {
+    padding-bottom: 100px;
+  }
+
+  #frequent-ask-question {
     padding-bottom: 100px;
   }
   .contact .col-sm-8 {
@@ -960,7 +969,8 @@ footer .glyphicon {
   #about {
     margin-bottom: 180px;
   }
-  #organizers {
+  #organizers,
+  #frequent-ask-question {
     padding-bottom: 0px;
     padding-top: 80px;
     margin-bottom: 80px;
