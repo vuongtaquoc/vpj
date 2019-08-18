@@ -304,7 +304,8 @@ footer .glyphicon {
 
 .timeline {
   position: relative;
-  margin-top: 240px
+  margin-top: 240px;
+  font-size: 18px;
 }
 
 .timeline-wrapper {
@@ -576,6 +577,7 @@ footer .glyphicon {
 
 .judging {
   margin-top: 200px;
+  font-size: 18px;
 }
 
 .judging ul {
