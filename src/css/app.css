@@ -12,6 +12,12 @@ a:link,
 a:active,
 a:focus {
   text-decoration: none;
+  color: #c1c1c1;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 button {
@@ -253,10 +259,13 @@ footer .glyphicon {
   margin-bottom: 190px;
 }
 
-.about-us h4 {
+.about-us h2 {
   font-family: 'Quicksand';
   font-size: 23px;
   color: #fff;
+  font-weight: normal;
+  text-transform: inherit;
+  margin-bottom: 0;
 }
 
 .about-us {
@@ -275,14 +284,13 @@ footer .glyphicon {
   text-align: justify;
 }
 
-.about-us .col-sm-3 p {
+.about-us .col-sm-3 h1 {
   font-family: 'Quicksand';
   font-weight: 700;
   font-size: 60px;
   color: #fff;
-  white-space: nowrap;
   position: relative;
-  top: 100px;
+  top: 10px;
 }
 
 .about-bottom a {
@@ -407,12 +415,14 @@ footer .glyphicon {
   display: none;
 }
 
-.timeline .col-sm-4 p {
+.timeline .col-sm-4 h2 {
   /* margin-top: 25px; */
   font-family: 'Quicksand';
   font-weight: 700;
   font-size: 72px;
   color: #fff;
+  text-transform: inherit;
+  margin: 0;
 }
 
 .container-time {
@@ -479,10 +489,13 @@ footer .glyphicon {
   min-width: 491px;
 }
 
-.datetime-bottom div p {
+.datetime-bottom div h2 {
   font-size: 28px;
   font-family: 'Quicksand';
   font-weight: 700;
+  color: inherit;
+  text-transform: inherit;
+  margin-bottom: 10px;
 }
 
 .download-img img {
@@ -506,13 +519,14 @@ footer .glyphicon {
   text-align: center;
 }
 
-.organizers h3 {
+.organizers h2 {
   font-family: 'Quicksand';
   font-weight: 700;
   font-size: 72px;
   color: #fff;
   margin-bottom: 70px;
   margin-top: 0px;
+  text-transform: inherit;
 }
 
 .contact .col-sm-6:nth-child(1) a {
@@ -611,10 +625,13 @@ footer .glyphicon {
   top: 50%;
 }
 
-.judging p {
+.judging h2 {
   font-size: 35px;
   font-weight: bold;
   padding: 80px 0px 50px 0px;
+  text-transform: inherit;
+  color: inherit;
+  margin: 0;
 }
 
 .judging ul li .span-img {
@@ -753,7 +770,7 @@ footer .glyphicon {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .timeline .col-sm-4 p,
+  .timeline .col-sm-4 h2,
   .container-time {
     margin-top: 40px;
   }
@@ -761,7 +778,7 @@ footer .glyphicon {
     text-align: center;
     margin-top: 0px;
   }
-  .about-us .col-sm-3 p {
+  .about-us .col-sm-3 h1 {
     top: 0px;
   }
   .container-time,
@@ -859,14 +876,14 @@ footer .glyphicon {
     padding: 20px 0px;
   }
   .about-us .col-sm-3 p,
-  .timeline .col-sm-4 p,
+  .timeline .col-sm-4 h2,
   .container-time,
-  .organizers h3 {
+  .organizers h2 {
     font-size: 40px
   }
-  .about-us h4,
+  .about-us h2,
   .timeline span,
-  .datetime-bottom div p,
+  .datetime-bottom div h2,
   .datetime-bottom div h4,
   .datetime-bottom div span,
   .contact .col-sm-6:nth-child(1) p {
@@ -896,7 +913,7 @@ footer .glyphicon {
   .date-time .col-sm-3 h4,
   .contact .col-sm-4 p,
   .date-time h3,
-  .datetime-bottom div p,
+  .datetime-bottom div h2,
   .btn-bottom .span-bottom {
     font-size: 20px;
     min-width: 244px;
